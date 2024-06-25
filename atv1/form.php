@@ -1,10 +1,10 @@
 <?php
-if {
+
     $numero1 = $_POST['numero1'];
     $numero2 = $_POST['numero2'];
     $operacao = $_POST['operacao'];
 
-    switch ($op) {
+    switch ($operacao) {
         case 'somar':
             $resultado = $numero1 + $numero2;
             $oper = "soma";
@@ -30,7 +30,5 @@ if {
     }
 
     echo "<h2>Resultado da " . $oper  . ": " . $resultado . "</h2>";
-} else {
-    echo "Não foi";
-}
+
 ?>
