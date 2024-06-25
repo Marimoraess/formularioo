@@ -2,14 +2,14 @@
 $nome =$_GET['nome'];
 $horario = $_GET['horario'];
 
-list($hora, $minuto) = explode(':', $horario);
+list($h, $min) = explode(':', $horario);
 
-if ($hora < 12) {
+if ($h < 12) {
     echo "Bom dia $nome!<br>";
-} elseif ($hora < 18) {
+} elseif ($h < 18) {
     echo "Boa tarde $nome!<br>";
 } else {
     echo "Boa noite $nome!<br>";
 }
-echo "São $hora e $minuto minutos.<br>"
+echo "São $h e $min minutos.<br>"
 ?>
