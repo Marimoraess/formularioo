@@ -1,13 +1,13 @@
 <?php
-$qtdpequena = $_GET['qtdpequena'];
-$qtdmedia = $_GET['qtdmedia'];
-$qtdgrande = $_GET['qtdgrande'];
+$qtdPequena = $_GET['qtdPequena'];
+$qtdMedia = $_GET['qtdMedia'];
+$qtdGrande = $_GET['qtdGrande'];
 
-$totalpequena = $qtdpequena * 10;
-$totalmedia = $qtdmedia * 12;
-$totalgrande = $qtdgrande * 15;
+$totalPequena = $qtdPequena * 10;
+$totalMedia = $qtdMedia * 12;
+$totalGrande = $qtdGrande * 15;
 
-$totalvenda = $totalpequena + $totalmedia + $totalgrande;
+$totalVenda = $totalPequena + $totalMedia + $totalGrande;
 
-echo "Valor arrecadado: R$ ".$totalvenda;
+echo "valor total: R$ ".$totalVenda;
 ?>
