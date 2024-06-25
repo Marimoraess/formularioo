@@ -1,38 +1,36 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if {
     $numero1 = $_POST['numero1'];
     $numero2 = $_POST['numero2'];
     $operacao = $_POST['operacao'];
 
-    switch ($operacao) {
+    switch ($op) {
         case 'somar':
             $resultado = $numero1 + $numero2;
-            $operacaoTexto = "soma";
+            $oper = "soma";
             break;
         case 'subtrair':
             $resultado = $numero1 - $numero2;
-            $operacaoTexto = "subtração";
+            $oper = "subtração";
             break;
         case 'dividir':
             if ($numero2 != 0) {
                 $resultado = $numero1 / $numero2;
-                $operacaoTexto = "divisão";
+                $oper = "divisão";
             } else {
                 $resultado = "Erro: Divisão por zero!";
-                $operacaoTexto = "divisão";
+                $oper  = "divisão";
             }
             break;
         case 'multiplicar':
             $resultado = $numero1 * $numero2;
-            $operacaoTexto = "multiplicação";
+            $oper = "multiplicação";
             break;
-        default:
-            $resultado = "Operação inválida";
-            $operacaoTexto = "";
+       
     }
 
-    echo "<h2>Resultado da " . $operacaoTexto . ": " . $resultado . "</h2>";
+    echo "<h2>Resultado da " . $oper  . ": " . $resultado . "</h2>";
 } else {
-    echo "Método de requisição inválido.";
+    echo "Não foi";
 }
 ?>
