@@ -85,6 +85,6 @@ switch ($estado) {
 }
 echo "<br>";
 ?>
-<!-- codigo html do php-->
-<a href='ex3.html'><button>Voltar</button></a>
+
+<a href='form.html'><button>Voltar</button></a>
 ?>
