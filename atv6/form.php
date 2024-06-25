@@ -22,7 +22,7 @@ if($media < 5){
 if($frequencia < 75){
     echo "Situação: Reprovado(a) por frequência";
     }
-if($media >= 5 && $f >= 75){
+if($media >= 5 && $frequencia >= 75){
     echo "Situação: Aprovado<br>";
     }
 
