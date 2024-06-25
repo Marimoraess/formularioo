@@ -10,10 +10,10 @@ $q = $_GET['quando'];
 
 echo "Autor: $text<br>";
 echo "<br>";
-echo "Publicação: $area<br>";
+echo "Acompanhantes: $area<br>";
 echo "<br>";
-echo "Vai ser publicado como: $op<br>";
+echo "Forma de Pagamento:: $op<br>";
 echo "<br>";
-echo "Vai ser publicado em: <br> $opt1<br> $opt2<br> $opt3<br>";
-echo "Vai ser publicado: $q<br>";
+echo "O(s) ser4viços: <br> $opt1<br> $opt2<br> $opt3<br>";
+echo "Quando irá: $q<br>";
 ?>

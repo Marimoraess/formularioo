@@ -8,7 +8,7 @@
 </head>
 <body>
    
-    <h2>Diário do Campus</h2>
+    <h2>SuperIngressos</h2>
     <h3>_____________________________</h3>
     <form action="form.php" method="get">
         <div>
@@ -17,26 +17,27 @@
         </div>
         <br>
         <div>
-            <p>Escreva a publicação ou artigo que deseja publicar: </p>
-            <TEXTAREA NAME = "area" VALUE = "Escreva..." ROWS = "10" COLS = "40"MAXLENGTH = "140" ></TEXTAREA>
+            <p>Escreva o nome completo de quem irá com você: </p>
+            <TEXTAREA NAME = "area"  ></TEXTAREA>
 
         </div>
         <br>
         <div>
-            <p>Selecione os serviços de publicação: </p>
-            <input type="radio" name="opcao" value = "Artigo de opinião"> Publicar como artigo de opinião<br>
-            <input type="radio" name="opcao" value = "Artigo científico"> Publicar como artigo científico<br>
-            <input type="radio" name="opcao" value = "Notícia"> Publicar como notícia<br>
+            <p>Forma de Pagamento: </p>
+            <input type="radio" name="opcao" value = "Dinheiro/Pix"> Dinheiro/Pix<br>
+            <input type="radio" name="opcao" value = "Cartão de Crédito"> Cartão de Crédito<br>
+            <input type="radio" name="opcao" value = " Cartão de Débito"> Cartão de Débito<br>
+        </div>
+        <div>
+            <p> Selecione o(s) serviço(s)</p>
+            <INPUT TYPE="checkbox" NAME="opt1" VALUE="Pacote Maracanã">Pacote Maracanã <br>
+            <INPUT TYPE="checkbox" NAME="opt2" VALUE="Campeonato Brasileiro"> Campeonato Brasileiro <br>
+            <INPUT TYPE="checkbox" NAME="opt3" VALUE="Museu Flamengo"> Museu Flamengo<br>
         </div>
         <br>
+        
         <div>
-            <p>Selecione onde deseja publicar: </p>
-            <INPUT TYPE="checkbox" NAME="opt1" VALUE="Campus de Birigui"> Campus de Birigui<br>
-            <INPUT TYPE="checkbox" NAME="opt2" VALUE="Campus de Piracicaba"> Campus de Piracicaba<br>
-            <INPUT TYPE="checkbox" NAME="opt3" VALUE="Campus de Juiz de Fora"> Campus de Juiz de Fora<br>
-        </div>
-        <div>
-            <p>Selecione quando a publicação deverá ser feita:</p>
+            <p>Selecione quando irá:</p>
             <select name = "quando">
                 <option value="Hoje">Ainda hoje</option>
                 <option value="Amanhã">Amanhã</OPTION>
@@ -48,3 +49,4 @@
             <button type="submit">Enviar</button>
         </div>
     </form>
+    
