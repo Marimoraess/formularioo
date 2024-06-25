@@ -6,6 +6,6 @@
   
     $dias = $idade * 365;
 
-    echo  ", você viveu aproximadamente " . $dias . " dias.";
+    echo  "você viveu aproximadamente " . $dias . " dias.";
 
 ?>
