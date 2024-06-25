@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Capital do Estado</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h2>Informe o Estado</h2>
-    <form action="form.php" method="post">
-        <label for="estado">Digite o nome do estado:</label>
-        <input type="text" id="estado" name="estado" required>
-        <br><br>
-        <input type="submit" value="Enviar">
+    <!-- comentários html
+    action => arquivo .php que será linkado
+    method => tipo de requisição http GET ou POST
+    -->
+    <h2>Escreva a sigla do estado desejado:</h2>
+    <form action="ex3.php" method="get">
+        <div>
+            <label for="estado">Estado</label>
+            <input type="text" name="estado">
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
     </form>
+    
 </body>
 </html>
