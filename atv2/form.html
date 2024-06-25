@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário Completo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h2>Formulário Completo</h2>
-    <form action="form.php" method="post">
-        
-        <label for="texto">Caixa de texto:</label>
-        <input type="text" id="texto" name="texto">
-        <br><br>
-        
-       
-        <label for="textarea">Caixa de texto de rolagem:</label>
-        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
-        <br><br>
-        
-        
-        <label for="checkbox">Caixa de seleção:</label>
-        <input type="checkbox" id="checkbox" name="checkbox" value="selecionado">
-        <br><br>
-        
-        
-        <label for="radio1">Opção 1:</label>
-        <input type="radio" id="radio1" name="radio" value="opcao1">
-        <label for="radio2">Opção 2:</label>
-        <input type="radio" id="radio2" name="radio" value="opcao2">
-        <br><br>
-        
-        <label for="select">Menu suspenso:</label>
-        <select id="select" name="select">
-            <option value="opcao1">Opção 1</option>
-            <option value="opcao2">Opção 2</option>
-            <option value="opcao3">Opção 3</option>
-        </select>
-        <br><br>
-        
-        <input type="submit" value="Enviar">
+   
+    <h2>Diário do Campus</h2>
+    <h3>_____________________________</h3>
+    <form action="form.php" method="get">
+        <div>
+            <label for="text">Seu nome: </label>
+            <input type="Text" name="text">
+        </div>
+        <br>
+        <div>
+            <p>Escreva a publicação ou artigo que deseja publicar: </p>
+            <TEXTAREA NAME = "area" VALUE = "Escreva..." ROWS = "10" COLS = "40"MAXLENGTH = "140" ></TEXTAREA>
+
+        </div>
+        <br>
+        <div>
+            <p>Selecione os serviços de publicação: </p>
+            <input type="radio" name="opcao" value = "Artigo de opinião"> Publicar como artigo de opinião<br>
+            <input type="radio" name="opcao" value = "Artigo científico"> Publicar como artigo científico<br>
+            <input type="radio" name="opcao" value = "Notícia"> Publicar como notícia<br>
+        </div>
+        <br>
+        <div>
+            <p>Selecione onde deseja publicar: </p>
+            <INPUT TYPE="checkbox" NAME="opt1" VALUE="Campus de Birigui"> Campus de Birigui<br>
+            <INPUT TYPE="checkbox" NAME="opt2" VALUE="Campus de Piracicaba"> Campus de Piracicaba<br>
+            <INPUT TYPE="checkbox" NAME="opt3" VALUE="Campus de Juiz de Fora"> Campus de Juiz de Fora<br>
+        </div>
+        <div>
+            <p>Selecione quando a publicação deverá ser feita:</p>
+            <select name = "quando">
+                <option value="Hoje">Ainda hoje</option>
+                <option value="Amanhã">Amanhã</OPTION>
+                <option value="Depois de amanhã">Depois de amanhã</OPTION>
+            </SELECT>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
     </form>
-</body>
-</html>
