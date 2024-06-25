@@ -1,6 +1,6 @@
 <?php
 
-$ano = $_GET['ano'];
+$ano = $_POST['ano'];
 $calcul1 = $ano%4;
 $calcul2 = $ano%100;
 $calcul3 = $ano%400;
